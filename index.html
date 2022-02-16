@@ -13,23 +13,29 @@
 </head>
 
 <body>
-    <!--  -->
+    <!-- master of finance start -->
     <main class="container mx-auto lg:mb-8 sm:mb-0">
-        <h1 class="text-center text-5xl font-bold  text-teal-500 mt-20 mb-10">Master of Finance</h1>
-        <!-- balance section starts -->
+        <h1 class="text-center text-5xl font-bold text-teal-500 mt-20 mb-10">Master of Finance</h1>
+        <!-- calculate balance section start -->
         <section>
-            <div class="grid lg:gap-12 sm:gap-8 lg:grid-cols-2 sm:grid-cols-1">
-                <!-- images area -->
+            <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-12 sm:gap-8">
+                <!-- images area start -->
                 <div>
                     <img class="lg:h-5/6 sm:h-full" src="images/money.jpg" alt="">
                 </div>
-                <!-- balance area -->
+                <!-- images area end -->
+
+                <!-- account area start -->
                 <div class="bg-slate-100 p-10 text-center">
+                    <!-- income area start -->
                     <h2 class="font-semibold mb-4 text-base text-black-300">Income</h2>
                     <p>Income:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-full mb-4 p-2 "
                             type="text" placeholder="Enter your income" name="" id="">
                     </p>
+                    <!-- income area end -->
+
+                    <!-- expenses area start -->
                     <h2 class="font-semibold mb-4 text-base text-black-300">Expenses</h2>
                     <p>Food:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-full ml-4 mb-4 p-2 "
@@ -45,6 +51,9 @@
                     </p>
                     <button class="bg-blue-400 rounded px-12 py-2 text-white font-medium">Calculate</button>
                     <p class="font-semibold mt-6 text-base text-black-300">Total Expenses: </p>
+                    <!-- expenses area end -->
+
+                    <!-- saving, remaining and total balance area start -->
                     <p class="font-semibold mt-4 mb-4 text-base text-black-300">Balance: </p>
                     <p>Save:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-1/6 sm:w-full mb-4 p-2 "
@@ -55,12 +64,15 @@
                     </p>
                     <p class="font-semibold mt-6 text-base text-black-300">Saving Amount: </p>
                     <p class="font-semibold mt-4 mb-4 text-base text-black-300">Remaining Balance: </p>
+                    <!-- saving, remaining and total balance area end -->
                 </div>
+                <!-- account area end -->
 
             </div>
         </section>
-        <!-- balance section ends -->
+        <!-- calculate balance section end -->
     </main>
+    <!-- master of finance end -->
 
 
     <!-- js -->
