@@ -13,7 +13,55 @@
 </head>
 
 <body>
-    <h1>Master of Finance</h1>
+    <!--  -->
+    <main class="container mx-auto lg:mb-8 sm:mb-0">
+        <h1 class="text-center text-5xl font-bold  text-teal-500 mt-20 mb-10">Master of Finance</h1>
+        <!-- balance section starts -->
+        <section>
+            <div class="grid lg:gap-12 sm:gap-8 lg:grid-cols-2 sm:grid-cols-1">
+                <!-- images area -->
+                <div>
+                    <img class="lg:h-5/6 sm:h-full" src="images/money.jpg" alt="">
+                </div>
+                <!-- balance area -->
+                <div class="bg-slate-100 p-10 text-center">
+                    <h2 class="font-semibold mb-4 text-base text-black-300">Income</h2>
+                    <p>Income:
+                        <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-full mb-4 p-2 "
+                            type="text" placeholder="Enter your income" name="" id="">
+                    </p>
+                    <h2 class="font-semibold mb-4 text-base text-black-300">Expenses</h2>
+                    <p>Food:
+                        <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-full ml-4 mb-4 p-2 "
+                            type="text" placeholder="Enter your food Cost" name="" id="">
+                    </p>
+                    <p>Rent:
+                        <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-full ml-6 mb-4 p-2 "
+                            type="text" placeholder="Enter your rent cost" name="" id="">
+                    </p>
+                    <p>Clothes:
+                        <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-full ml-1.5 mb-4 p-2 "
+                            type="text" placeholder="Enter your clothes cost" name="" id="">
+                    </p>
+                    <button class="bg-blue-400 rounded px-12 py-2 text-white font-medium">Calculate</button>
+                    <p class="font-semibold mt-6 text-base text-black-300">Total Expenses: </p>
+                    <p class="font-semibold mt-4 mb-4 text-base text-black-300">Balance: </p>
+                    <p>Save:
+                        <input class="border border-gray-400 rounded bg-slate-200 lg:w-1/6 sm:w-full mb-4 p-2 "
+                            type="text" placeholder="Amount of %" name="" id="">
+                        <span class="ml-4 mr-4">%</span>
+                        <button class="bg-blue-400 rounded px-12 py-2 text-white font-medium">Save
+                        </button>
+                    </p>
+                    <p class="font-semibold mt-6 text-base text-black-300">Saving Amount: </p>
+                    <p class="font-semibold mt-4 mb-4 text-base text-black-300">Remaining Balance: </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- balance section ends -->
+    </main>
+
 
     <!-- js -->
     <script src="js/script.js"></script>
