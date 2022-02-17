@@ -48,7 +48,7 @@ function CalculateBalance() {
 // saving money
 function savingMoney() {
     const percentage = parseFloat(percentageAmount.value);
-    const saving = (totalBalance.innerText * percentage) / 100;
+    const saving = (incomeAmount.value * percentage) / 100;
     savingAmount.innerText = saving;
     const remaining = updateBalance(parseFloat(totalBalance.innerText), parseFloat(savingAmount.innerText));
     remainingBalance.innerText = remaining;
