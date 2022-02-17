@@ -23,8 +23,8 @@ function updateBalance(balance, amount) {
     if (amount > balance) {
         return alert("You do not have sufficent amount")
     }
-    const balanceAmount = balance - amount
-    return balanceAmount;
+    const balanceNewAmount = balance - amount
+    return balanceNewAmount;
 
 }
 
