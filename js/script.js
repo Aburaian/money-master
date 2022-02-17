@@ -11,7 +11,7 @@ const remainingBalance = document.getElementById("remaining-balance");
 
 // expenses balance
 function expensesBalance(food, rent, clothes) {
-    if (isNaN(food) || isNaN(rent) || isNaN(clothes) || food < 0 || rent < 0 || clothes < 0) {
+    if (isNaN(incomeAmount.value) || isNaN(food) || isNaN(rent) || isNaN(clothes) || incomeAmount.value < 0 || food < 0 || rent < 0 || clothes < 0) {
         return alert("Please input valid amount of money in positive number format")
     }
     const total = food + rent + clothes;
@@ -30,9 +30,8 @@ function updateBalance(balance, amount) {
 
 // alert error massage
 function alertMassage(inputAmount) {
-    if (isNaN(inputAmount) || inputAmount < 0 || inputAmount === "") {
+    if (isNaN(inputAmount) || inputAmount < 0 || inputAmount == "") {
         return alert("Please input valid amount of money in positive number format")
-
     }
 }
 
@@ -42,7 +41,7 @@ function CalculateBalance() {
     totalExpenses.innerText = expenses;
     const updateAmount = updateBalance(parseFloat(incomeAmount.value), parseFloat(totalExpenses.innerText));
     totalBalance.innerText = updateAmount;
-    alertMassage(incomeAmount.value);
+    // alertMassage(incomeAmount.value);
 }
 
 // saving money
