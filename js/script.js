@@ -11,11 +11,8 @@ const remainingBalance = document.getElementById("remaining-balance");
 
 // expenses balance
 function expensesBalance(food, rent, clothes) {
-    if (food < 0 || rent < 0 || clothes < 0) {
-        foodAmount.value = ""
-        rentAmount.value = ""
-        clothesAmount.value = ""
-        return alert('Please input valid amount of money in number format')
+    if (isNaN(food) || isNaN(rent) || isNaN(clothes) || food < 0 || rent < 0 || clothes < 0) {
+        return alert("Please input valid amount of money in positive number format")
     }
     const total = food + rent + clothes;
     return total;
@@ -23,11 +20,21 @@ function expensesBalance(food, rent, clothes) {
 
 // updateBalance
 function updateBalance(balance, amount) {
+    if (amount > balance) {
+        return alert("You do not have sufficent amount")
+    }
     const balanceAmount = balance - amount
     return balanceAmount;
 
 }
 
+// alert error massage
+function alertMassage(inputAmount) {
+    if (isNaN(inputAmount) || inputAmount < 0 || inputAmount === "") {
+        return alert("Please input valid amount of money in positive number format")
+
+    }
+}
 
 // Calculate balance
 function CalculateBalance() {
@@ -35,38 +42,16 @@ function CalculateBalance() {
     totalExpenses.innerText = expenses;
     const updateAmount = updateBalance(parseFloat(incomeAmount.value), parseFloat(totalExpenses.innerText));
     totalBalance.innerText = updateAmount;
-    incomeAmount.value = "";
-    foodAmount.value = "";
-    rentAmount.value = "";
-    clothesAmount.value = "";
+    alertMassage(incomeAmount.value);
 }
 
+// saving money
 function savingMoney() {
     const percentage = parseFloat(percentageAmount.value);
     const saving = (totalBalance.innerText * percentage) / 100;
     savingAmount.innerText = saving;
     const remaining = updateBalance(parseFloat(totalBalance.innerText), parseFloat(savingAmount.innerText));
     remainingBalance.innerText = remaining;
-    // enoughAmountMassage(savingAmount.innerText, totalBalance.innerText)
     alertMassage(percentageAmount.value);
-    percentageAmount.value = ""
-
 
 }
-
-/* // enough amount error massage
-function enoughAmountMassage(availableAmount, availableBalance) {
-    if (availableAmount > availableBalance) {
-        return alert("You do not have sufficent amount")
-    }
-} */
-
-/* // alert error massage
-function alertMassage(inputAmount) {
-    if (inputAmount < 0) {
-        inputAmount.value = "";
-        return alert('Please input valid amount of money in number format')
-
-    }
-
-} */

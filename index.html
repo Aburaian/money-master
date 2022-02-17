@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master of Finance</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/money-favicon.png" type="image/x-icon">
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- style sheet -->
@@ -31,7 +33,7 @@
                     <h2 class="font-semibold mb-4 text-base text-black-300">Income</h2>
                     <p>Income:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-auto mb-4 p-2 "
-                            type="number" placeholder="Enter your income" name="" id="income-amount">
+                            type="text" placeholder="Enter your income" name="" id="income-amount">
                     </p>
                     <!-- income area end -->
 
@@ -39,37 +41,37 @@
                     <h2 class="font-semibold mb-4 text-base text-black-300">Expenses</h2>
                     <p>Food:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-auto ml-4 mb-4 p-2 "
-                            type="number" placeholder="Enter your food Cost" name="" id="food-amount">
+                            type="text" placeholder="Enter your food Cost" name="" id="food-amount">
                     </p>
                     <p>Rent:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-auto ml-6 mb-4 p-2 "
-                            type="number" placeholder="Enter your rent cost" name="" id="rent-amount">
+                            type="text" placeholder="Enter your rent cost" name="" id="rent-amount">
                     </p>
                     <p>Clothes:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-2/5 sm:w-auto ml-1.5 mb-4 p-2 "
-                            type="number" placeholder="Enter your clothes cost" name="" id="clothes-amount">
+                            type="text" placeholder="Enter your clothes cost" name="" id="clothes-amount">
                     </p>
                     <button onclick="CalculateBalance()"
                         class="bg-blue-400 rounded px-12 py-2 text-white font-medium">Calculate</button>
-                    <p class="font-semibold mt-6 text-base text-black-300">Total Expenses: <span
-                            id="total-expenses">0</span> </p>
+                    <p class="font-semibold mt-6 text-base text-black-300">Total Expenses: $<span
+                            id="total-expenses">00</span> </p>
                     <!-- expenses area end -->
 
                     <!-- saving, remaining and total balance area start -->
-                    <p class="font-semibold mt-4 mb-4 text-base text-black-300">Balance: <span
-                            id="total-balance">0</span> </p>
+                    <p class="font-semibold mt-4 mb-4 text-base text-black-300">Balance: $<span
+                            id="total-balance">00</span> </p>
                     <p>Save:
                         <input class="border border-gray-400 rounded bg-slate-200 lg:w-1/6 sm:w-auto mb-4 p-2 "
-                            type="number" placeholder="Amount" name="" id="percentage-amount">
+                            type="text" placeholder="Amount" name="" id="percentage-amount">
                         <span class="ml-4 mr-4">%</span>
                         <button onclick="savingMoney()"
                             class="bg-blue-400 rounded px-12 py-2 text-white font-medium">Save
                         </button>
                     </p>
-                    <p class="font-semibold mt-6 text-base text-black-300">Saving Amount: <span
-                            id="saving-amount">0</span> </p>
+                    <p class="font-semibold mt-6 text-base text-black-300">Saving Amount: $<span
+                            id="saving-amount">00</span> </p>
                     <p class="font-semibold mt-4 mb-4 text-base text-black-300">Remaining
-                        Balance: <span id="remaining-balance">0</span></p>
+                        Balance: $<span id="remaining-balance">00</span></p>
                     <!-- saving, remaining and total balance area end -->
                 </div>
                 <!-- account area end -->
