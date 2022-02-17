@@ -18,7 +18,7 @@ function expensesBalance(food, rent, clothes) {
     return total;
 }
 
-// updateBalance
+// update balance
 function updateBalance(balance, amount) {
     if (amount > balance) {
         return alert("You do not have sufficent amount")
@@ -41,7 +41,6 @@ function CalculateBalance() {
     totalExpenses.innerText = expenses;
     const updateAmount = updateBalance(parseFloat(incomeAmount.value), parseFloat(totalExpenses.innerText));
     totalBalance.innerText = updateAmount;
-    // alertMassage(incomeAmount.value);
 }
 
 // saving money
